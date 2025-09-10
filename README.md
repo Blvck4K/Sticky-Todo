@@ -1,8 +1,8 @@
 # Welcome to your Lovable project
 
-## Project info
+## Project
 
-**URL**: [https://lovable.dev/projects/81f56c5b-5ef5-428b-a19c-4644eb10c1e3](https://tangerine-journal.lovable.app)
+**URL**: (https://blvck4k-sticky-todo-gkmk.bolt.host))
 
 ## How can I edit this code?
 
