@@ -5,6 +5,7 @@ import { TodoEditor } from './TodoEditor'
 import { Button } from '@/components/ui/button'
 import { LogOut, Plus } from 'lucide-react'
 import { useToast } from '@/hooks/use-toast'
+import { CalendarView } from '@/components/calendar/CalendarView'
 
 interface Todo {
   id: string
@@ -88,7 +89,7 @@ export const TodoBook = () => {
       {/* Book Layout */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-[600px]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 min-h-[600px]">
             {/* Left Page - Todo List */}
             <div className="bg-card rounded-2xl shadow-2xl border-2 border-primary/20 p-8 transform rotate-1 hover:rotate-0 transition-transform duration-300">
               <div className="h-full">
@@ -101,6 +102,16 @@ export const TodoBook = () => {
                   selectedTodo={selectedTodo}
                   onTodosUpdate={fetchTodos}
                 />
+              </div>
+            </div>
+
+            {/* Middle Page - Calendar */}
+            <div className="bg-card rounded-2xl shadow-2xl border-2 border-primary/20 p-8">
+              <div className="h-full">
+                <h2 className="text-xl font-semibold text-secondary mb-6 border-b border-secondary/20 pb-2">
+                  Calendar
+                </h2>
+                <CalendarView />
               </div>
             </div>
 
